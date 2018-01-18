@@ -79,7 +79,7 @@
                       <tr>
                           <td width="170px"><h4>Total Pesanan</h4></td>
                           <td><h4>:</h4></td>
-                          <td id="total_f"></td>
+                          <td id="total"></td>
 
                       </tr>
                       <tr>

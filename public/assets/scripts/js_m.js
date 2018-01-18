@@ -21,7 +21,7 @@ function makanan()
     var jmlh = $('#jumlah').val();
     if( makan == 'Mie Juara se-Bandung'){
         var mkn = 20000;
-        
+
     } else if( makan=='Mie Juara Se-Indonesia'){
         var mkn = 21000;
     } else if( makan=='Mie Juara Se-Asia'){
@@ -33,12 +33,13 @@ function makanan()
     } else if( makan=='Mie Kitel Kari'){
         var mkn = 18000;
     }
+
     // var jumlah = 1;
     // $('#jumlah').val(jumlah);
-    var total_makan = parseInt(mkn)*parseInt(jmlh);
+
     // alert('Hasil : '+total_makan);
     // $('#total_f').val(total_makan);
-    $('#total_f').html(total_makan);
+    $('#total').html(mkn);
 }
 
 // function total()
