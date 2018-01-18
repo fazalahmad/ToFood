@@ -18,28 +18,36 @@ function validate_menu()
 function makanan()
 {
     var makan = $('#j_makanan').val();
-    var jmlh = $('#jumlah').val();
+    var jumlah = 0;
     if( makan == 'Mie Juara se-Bandung'){
         var mkn = 20000;
-
+        var jumlah = jumlah + 1;
     } else if( makan=='Mie Juara Se-Indonesia'){
         var mkn = 21000;
+        var jumlah = jumlah + 1;
     } else if( makan=='Mie Juara Se-Asia'){
         var mkn = 26000;
+        var jumlah = jumlah + 1;
     } else if( makan=='Mie Kitel Kari'){
         var mkn = 18000;
+        var jumlah = jumlah + 1;
     } else if( makan=='Mie Kitel Kari'){
         var mkn = 19000;
+        var jumlah = jumlah + 1;
     } else if( makan=='Mie Kitel Kari'){
         var mkn = 18000;
+        var jumlah = jumlah + 1;
     }
 
-    // var jumlah = 1;
-    // $('#jumlah').val(jumlah);
-
-    // alert('Hasil : '+total_makan);
-    // $('#total_f').val(total_makan);
+    $('#jumlah').val(jumlah);
     $('#total').html(mkn);
+    return mkn;
+}
+
+function add()
+{
+
+    var jumlah = $('#jumlah').val();
 }
 
 // function total()

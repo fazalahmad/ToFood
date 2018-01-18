@@ -11,14 +11,14 @@
             <form id="advanced-form" data-parsley-validate novalidate>
               <div class="form-group">
                 <label for="text-input1">ID Faktur</label>
-                <input type="text" id="total" class="form-control" required data-parsley-minlength="8">
+                <input type="text" id="" class="form-control" required data-parsley-minlength="8">
               </div>
 
               <label for="text-input1">Makanan</label>
               <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
-                        <select name="f_makanan" id="j_makanan" class="form-control">
+                        <select name="f_makanan" id="j_makanan" onchange="makanan()" class="form-control">
                           <option>Pilih Makanan</option>
                           <option value='Mie Juara se-Bandung'>Mie Juara se-Bandung</option>
                           <option value="Mie Juara Se-Indonesia">Mie Juara Se-Indonesia</option>
@@ -31,7 +31,7 @@
                   </div>
                   <div class="col-md-2">
                     <div class="form-group">
-                      <input type="number" id="jumlah" onchange="makanan()" class="form-control" min="1" required data-parsley-minlength="8">
+                      <input type="number" id="jumlah" onchange="add()"  class="form-control" min="1" required data-parsley-minlength="8">
                     </div>
                   </div>
                   <div class="col-md-2">
