@@ -11,27 +11,27 @@
             <form id="advanced-form" data-parsley-validate novalidate>
               <div class="form-group">
                 <label for="text-input1">ID Faktur</label>
-                <input type="text" id="text-input1" class="form-control" required data-parsley-minlength="8">
+                <input type="text" id="total" class="form-control" required data-parsley-minlength="8">
               </div>
 
               <label for="text-input1">Makanan</label>
               <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
-                        <select class="form-control">
+                        <select name="f_makanan" id="j_makanan" class="form-control">
                           <option>Pilih Makanan</option>
-                          <option value=''>Mie Juara se-Bandung</option>
-                          <option value="">Mie Juara Se-Indonesia</option>
-                          <option value="">Mie Juara Se-Asia</option>
-                          <option value="">Mie Kitel Kari</option>
-                          <option value="">Mie Katsu kari</option>
-                          <option value="">Nasi Ayam Katsu</option>
+                          <option value='Mie Juara se-Bandung'>Mie Juara se-Bandung</option>
+                          <option value="Mie Juara Se-Indonesia">Mie Juara Se-Indonesia</option>
+                          <option value="Mie Juara Se-Asia">Mie Juara Se-Asia</option>
+                          <option value="Mie Kitel Kari">Mie Kitel Kari</option>
+                          <option value="Mie Katsu kari">Mie Katsu kari</option>
+                          <option value="Nasi Ayam Katsu">Nasi Ayam Katsu</option>
                         </select>
                     </div>
                   </div>
                   <div class="col-md-2">
                     <div class="form-group">
-                      <input type="number" id="text-input1" class="form-control" min="1" required data-parsley-minlength="8">
+                      <input type="number" id="jumlah" onchange="makanan()" class="form-control" min="1" required data-parsley-minlength="8">
                     </div>
                   </div>
                   <div class="col-md-2">
@@ -79,7 +79,7 @@
                       <tr>
                           <td width="170px"><h4>Total Pesanan</h4></td>
                           <td><h4>:</h4></td>
-                          <td></td>
+                          <td id="total_f"></td>
 
                       </tr>
                       <tr>

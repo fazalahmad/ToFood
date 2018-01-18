@@ -60,6 +60,32 @@ class Controller_Anggota extends Controller
 
           $add->save();
           $add2->save();
-          return redirect('/petugas')->with('success','Petugas dengan '.$req->f_nama. ' sudah terdaftar');
+          return redirect('/petugas')->with('success','Petugas dengan nama '.$req->f_nama. ' sudah terdaftar');
+      }
+
+      public function edit($id_petugas)
+      {
+          $edits = anggota_model::where('id_petugas', $id_petugas)->first();
+          return view('/admin.anggota.edit_anggota', compact('edits'));
+      }
+
+      public function update(Request $req, $id_petugas)
+      {
+          $data_p = [
+              'id_petugas' => $req->f_id_petugas,
+              'nama'       => $req->f_nama,
+              'kelamin'    => $req->f_kelamin,
+              'alamat'     => $req->f_alamat,
+              'no_hp'      => $req->f_no_hp,
+          ];
+
+          $data_m = [
+              'id_petugas' => $req->f_id_petugas,
+              'shift'      => $req->f_shift,
+          ];
+          anggota_model::where('id_petugas',$id_petugas)->update($data_p);
+          jam_kerja_model::where('id_petugas',$id_petugas)->update($data_m);
+          return redirect('/petugas')->with('success', 'Data Petugas '.$req->id_petugas.' berhasil di update');
+
       }
 }

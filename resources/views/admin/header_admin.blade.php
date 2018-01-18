@@ -90,7 +90,7 @@
 								<li class=""><a href="menu">List</a></li>
 							</ul>
 						</li>
-						<li class=""><a href="report"><i class="lnr lnr-text-format"></i> <span>Kasir</span></a></li>
+						<li class=""><a href="/bayar"><i class="lnr lnr-text-format"></i> <span>Kasir</span></a></li>
 						<li class=""><a href="report"><i class="lnr lnr-text-format"></i> <span>Laporan</span></a></li>
 					</ul>
 				</nav>
@@ -106,6 +106,7 @@
 	<!-- END WRAPPER -->
 	<!-- Javascript -->
 	<script src="assets/vendor/jquery/jquery.min.js"></script>
+
 	<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 	<script src="assets/vendor/metisMenu/metisMenu.js"></script>
 	<script src="assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
@@ -127,6 +128,7 @@
 					$('#example').DataTable();
 					} );
 	</script>
+	<script src="assets/scripts/js_m.js"></script><script src="assets/scripts/js_m.js"></script>
 </body>
 
 </html>
